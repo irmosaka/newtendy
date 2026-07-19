@@ -3,65 +3,61 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Tendy - ارائه سبد محصولی به مدیریت ارشد</title>
-  <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <title>Tendy Product Lineup ۱۴۰۵</title>
+  <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;700&display=swap" rel="stylesheet">
   <style>
-    :root { --primary: #33a7b5; --dark: #13232f; --accent: #f4a261; }
-    body { font-family: 'Vazirmatn', sans-serif; margin: 0; background: #0f172a; color: #e2e8f0; overflow-x: hidden; }
-    .slide { position: absolute; width: 100%; height: 100vh; display: none; align-items: center; justify-content: center; text-align: center; padding: 60px; background-size: cover; background-position: center; transition: opacity 0.8s; }
+    :root { --primary: #33a7b5; --dark: #13232f; }
+    body { font-family: 'Vazirmatn', sans-serif; margin: 0; background: #0f172a; color: #e2e8f0; }
+    .slide { position: absolute; width: 100%; height: 100vh; display: none; align-items: center; justify-content: center; padding: 60px; background-size: cover; background-position: center; }
     .slide.active { display: flex; animation: fadeIn 1s; }
-    @keyframes fadeIn { from { opacity: 0; transform: translateY(30px); } to { opacity: 1; transform: translateY(0); } }
-    h1 { font-size: 4.5rem; margin-bottom: 20px; }
-    p { font-size: 1.5rem; max-width: 800px; margin: 0 auto; line-height: 1.8; }
-    .nav { position: fixed; bottom: 40px; left: 50%; transform: translateX(-50%); background: rgba(19,35,47,0.95); backdrop-filter: blur(12px); padding: 15px 35px; border-radius: 60px; display: flex; gap: 25px; z-index: 1000; box-shadow: 0 10px 40px rgba(0,0,0,0.3); }
-    .nav button { background: none; border: none; color: white; font-size: 1.6rem; cursor: pointer; padding: 12px 20px; border-radius: 50%; transition: 0.3s; }
-    .nav button:hover { background: rgba(51,167,181,0.3); color: var(--primary); }
-    .highlight { color: var(--primary); font-weight: 700; }
+    @keyframes fadeIn { from { opacity: 0; transform: translateY(40px); } to { opacity: 1; transform: translateY(0); } }
+    h1 { font-size: 3.8rem; margin-bottom: 20px; }
+    p { font-size: 1.4rem; max-width: 800px; margin: 0 auto; line-height: 1.8; }
+    .nav { position: fixed; bottom: 40px; left: 50%; transform: translateX(-50%); background: rgba(19,35,47,0.95); padding: 15px 40px; border-radius: 60px; display: flex; gap: 25px; z-index: 1000; }
+    .nav button { background: none; border: none; color: white; font-size: 1.8rem; cursor: pointer; padding: 12px 20px; border-radius: 50%; }
+    .product-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 25px; max-width: 1200px; margin: 40px auto; }
+    .product-card { background: rgba(255,255,255,0.1); backdrop-filter: blur(10px); border-radius: 20px; padding: 25px; text-align: center; transition: 0.4s; }
+    .product-card:hover { background: rgba(51,167,181,0.2); transform: scale(1.05); }
   </style>
 </head>
 <body>
-  <!-- اسلاید ۱: عنوان -->
-  <div class="slide active" style="background: linear-gradient(rgba(19,35,47,0.85), rgba(19,35,47,0.85)), url('https://source.unsplash.com/random/1920x1080/?elegant-home');">
+  <!-- اسلاید ۱ -->
+  <div class="slide active" style="background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://source.unsplash.com/random/1920x1080/?modern-kitchen');">
     <div>
-      <h1>Tendy</h1>
-      <p style="font-size:2.2rem">سبد محصولی هوشمند برای شبکه فروش خانه</p>
-      <p style="margin-top:40px; font-size:1.3rem; opacity:0.9">ارائه به مدیریت ارشد • تابستان ۱۴۰۵</p>
+      <h1>Tendy Product Lineup</h1>
+      <p style="font-size:2rem">سبد محصولی قابل دمو در منزل • تابستان ۱۴۰۵</p>
     </div>
   </div>
 
-  <!-- اسلاید ۲: چشم‌انداز -->
+  <!-- اسلاید ۲: دسته‌بندی -->
   <div class="slide" style="background: #13232f;">
     <div>
-      <h1>چشم‌انداز تندی</h1>
-      <p>ایجاد تجربه خرید متفاوت از طریق <span class="highlight">دمو در منزل</span> توسط مشاوران حرفه‌ای</p>
-      <p style="margin-top:40px">هدف: افزایش فروش مستقیم، وفاداری مشتری و حاشیه سود بالاتر</p>
-    </div>
-  </div>
-
-  <!-- اسلاید ۳: دسته‌بندی -->
-  <div class="slide" style="background: linear-gradient(#33a7b5, #1e6b7a);">
-    <div>
       <h1>دسته‌بندی محصولات</h1>
-      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:30px;max-width:1100px;margin:40px auto">
-        <div><h3>🏠 Home & Kitchen</h3><p>سرخ‌کن، مخلوط‌کن، بخارشوی، اتو بخار</p></div>
-        <div><h3>💄 Beauty & Personal Care</h3><p>سشوار، بخور صورت، مراقبت پوست</p></div>
-        <div><h3>🧘 Health & Wellness</h3><p>تصفیه هوا، ماساژور</p></div>
+      <div class="product-grid">
+        <div class="product-card"><h3>🏠 Home & Kitchen</h3><p>سرخ‌کن بدون روغن، مخلوط‌کن، بخارشوی، اتو بخار</p></div>
+        <div class="product-card"><h3>🧹 Cleaning</h3><p>جاروبرقی شارژی، بخارشوی</p></div>
+        <div class="product-card"><h3>💄 Beauty</h3><p>سشوار، بخور صورت، مراقبت پوست</p></div>
+        <div class="product-card"><h3>🧘 Health</h3><p>تصفیه هوا، ماساژور</p></div>
       </div>
     </div>
   </div>
 
-  <!-- اسلاید ۴: مزیت رقابتی -->
-  <div class="slide" style="background: #0f172a;">
+  <!-- اسلاید ۳: پروداکت لاین -->
+  <div class="slide" style="background: linear-gradient(#33a7b5, #1e6b7a);">
     <div>
-      <h1>چرا Tendy؟</h1>
-      <p style="font-size:1.8rem">دمو واقعی در خانه مشتری • فروش مستقیم • حاشیه سود بالا • وفاداری بلندمدت</p>
+      <h1>محصولات کلیدی</h1>
+      <div class="product-grid">
+        <div class="product-card"><h3>سرخ‌کن بدون روغن</h3><p>دمو ۵ دقیقه‌ای • فروش بالا</p></div>
+        <div class="product-card"><h3>جاروبرقی شارژی</h3><p>سبک و قدرتمند • دمو آسان</p></div>
+        <div class="product-card"><h3>بخارشوی</h3><p>تمیزکاری عمیق • تقاضای بالا</p></div>
+        <div class="product-card"><h3>تصفیه‌کننده هوا</h3><p>سلامت خانواده • ترند قوی</p></div>
+      </div>
     </div>
   </div>
 
   <div class="nav">
-    <button onclick="prevSlide()">←</button>
-    <button onclick="nextSlide()">→</button>
+    <button onclick="prevSlide()">→</button>
+    <button onclick="nextSlide()">←</button>
   </div>
 
   <script>
