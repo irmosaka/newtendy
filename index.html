@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tendy - لاین محصولات</title>
+  <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;700&display=swap" rel="stylesheet">
+  <style>
+    :root { --primary: #33a7b5; }
+    body { font-family: 'Vazirmatn', sans-serif; margin: 0; background: #f8f9fa; color: #2c3e50; }
+    header { background: linear-gradient(135deg, var(--primary), #2a8a96); color: white; padding: 80px 20px; text-align: center; }
+    h1 { font-size: 3.2rem; margin: 0; }
+    .subtitle { font-size: 1.4rem; opacity: 0.95; }
+    .section { padding: 80px 20px; }
+    .products { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 25px; max-width: 1200px; margin: 0 auto; }
+    .card { background: white; border-radius: 20px; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.1); transition: all 0.4s; }
+    .card:hover { transform: translateY(-15px); box-shadow: 0 20px 40px rgba(51,167,181,0.25); }
+    .card img { width: 100%; height: 220px; object-fit: cover; }
+    .card-content { padding: 25px; }
+    .category { color: var(--primary); font-weight: bold; margin-bottom: 8px; }
+    .btn { background: var(--primary); color: white; padding: 12px 30px; border-radius: 50px; text-decoration: none; display: inline-block; margin-top: 15px; }
+    .hero { background: url('https://source.unsplash.com/random/1600x900/?home') center/cover no-repeat; height: 60vh; display: flex; align-items: center; justify-content: center; text-align: center; color: white; text-shadow: 0 2px 10px rgba(0,0,0,0.6); }
+  </style>
+</head>
+<body>
+  <div class="hero">
+    <div>
+      <h1>Tendy</h1>
+      <p class="subtitle">شبکه فروش هوشمند خانه</p>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2 style="text-align:center; color:var(--primary);">لاین محصولات قابل دمو در منزل</h2>
+    <div class="products">
+      <!-- محصولات رو اینجا اضافه می‌کنیم -->
+      <div class="card">
+        <div class="card-content">
+          <div class="category">آشپزخانه هوشمند</div>
+          <h3>سرخ‌کن بدون روغن</h3>
+          <p>دمو سریع و جذاب برای زندگی سالم</p>
+          <a href="#" class="btn">جزئیات</a>
+        </div>
+      </div>
+      <!-- بقیه کارت‌ها رو می‌تونی اضافه کنی -->
+    </div>
+  </div>
+
+  <footer style="text-align:center; padding:40px; background:#2c3e50; color:white;">
+    © 2026 Tendy - هلدینگ خدمات جامع انتخاب
+  </footer>
+</body>
+</html>
