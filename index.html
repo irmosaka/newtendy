@@ -8,46 +8,56 @@
   <style>
     :root { --primary: #33a7b5; }
     body { font-family: 'Vazirmatn', sans-serif; margin: 0; background: #f8f9fa; color: #2c3e50; }
-    header { background: linear-gradient(135deg, var(--primary), #2a8a96); color: white; padding: 80px 20px; text-align: center; }
-    h1 { font-size: 3.2rem; margin: 0; }
-    .subtitle { font-size: 1.4rem; opacity: 0.95; }
-    .section { padding: 80px 20px; }
-    .products { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 25px; max-width: 1200px; margin: 0 auto; }
+    .hero { 
+      background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('https://source.unsplash.com/random/1600x900/?modern-home') center/cover no-repeat; 
+      height: 70vh; 
+      display: flex; 
+      align-items: center; 
+      justify-content: center; 
+      text-align: center; 
+      color: white; 
+    }
+    h1 { font-size: 3.5rem; margin: 0; text-shadow: 0 3px 15px rgba(0,0,0,0.6); }
+    .subtitle { font-size: 1.5rem; margin-top: 10px; }
+    .section { padding: 80px 20px; max-width: 1200px; margin: 0 auto; }
+    .products { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 25px; }
     .card { background: white; border-radius: 20px; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.1); transition: all 0.4s; }
-    .card:hover { transform: translateY(-15px); box-shadow: 0 20px 40px rgba(51,167,181,0.25); }
+    .card:hover { transform: translateY(-12px); box-shadow: 0 20px 40px rgba(51,167,181,0.2); }
     .card img { width: 100%; height: 220px; object-fit: cover; }
     .card-content { padding: 25px; }
-    .category { color: var(--primary); font-weight: bold; margin-bottom: 8px; }
-    .btn { background: var(--primary); color: white; padding: 12px 30px; border-radius: 50px; text-decoration: none; display: inline-block; margin-top: 15px; }
-    .hero { background: url('https://source.unsplash.com/random/1600x900/?home') center/cover no-repeat; height: 60vh; display: flex; align-items: center; justify-content: center; text-align: center; color: white; text-shadow: 0 2px 10px rgba(0,0,0,0.6); }
+    .category { color: var(--primary); font-weight: bold; }
+    .btn { background: var(--primary); color: white; padding: 12px 32px; border-radius: 50px; text-decoration: none; display: inline-block; margin-top: 15px; }
+    footer { background: #2c3e50; color: white; padding: 40px 20px; text-align: center; }
+    .logo { max-height: 60px; margin: 15px 0; }
   </style>
 </head>
 <body>
   <div class="hero">
     <div>
       <h1>Tendy</h1>
-      <p class="subtitle">شبکه فروش هوشمند خانه</p>
+      <p class="subtitle">شبکه فروش هوشمند خانه • خدمات جامع انتخاب</p>
     </div>
   </div>
 
   <div class="section">
-    <h2 style="text-align:center; color:var(--primary);">لاین محصولات قابل دمو در منزل</h2>
+    <h2 style="text-align:center; color:var(--primary); margin-bottom:40px;">لاین محصولات قابل دمو در منزل</h2>
     <div class="products">
-      <!-- محصولات رو اینجا اضافه می‌کنیم -->
+      <!-- محصولات رو اینجا اضافه کن -->
       <div class="card">
         <div class="card-content">
-          <div class="category">آشپزخانه هوشمند</div>
+          <div class="category">آشپزخانه</div>
           <h3>سرخ‌کن بدون روغن</h3>
-          <p>دمو سریع و جذاب برای زندگی سالم</p>
-          <a href="#" class="btn">جزئیات</a>
+          <p>دمو سریع و جذاب برای سبک زندگی سالم</p>
+          <a href="#" class="btn">جزئیات محصول</a>
         </div>
       </div>
-      <!-- بقیه کارت‌ها رو می‌تونی اضافه کنی -->
+      <!-- کارت‌های بیشتر اضافه کن -->
     </div>
   </div>
 
-  <footer style="text-align:center; padding:40px; background:#2c3e50; color:white;">
-    © 2026 Tendy - هلدینگ خدمات جامع انتخاب
+  <footer>
+    <img src="https://www.entekhabservice.com/wp-content/uploads/2025/08/%D9%84%D9%88%DA%AF%D9%88-%D9%84%D8%A7%D8%AA%DB%8C%D9%86-300x169.png" alt="هلدینگ خدمات جامع انتخاب" class="logo">
+    <p>زیرمجموعه هلدینگ خدمات جامع انتخاب</p>
   </footer>
 </body>
 </html>
