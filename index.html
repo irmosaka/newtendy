@@ -1,102 +1,69 @@
 <!DOCTYPE html>
 <html lang="fa" dir="rtl">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Tendy - لاین محصولات</title>
-  <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-  <style>
-    :root { --primary: #33a7b5; --dark: #2c3e50; }
-    body { font-family: 'Vazirmatn', sans-serif; margin: 0; background: #f8f9fa; color: #2c3e50; }
-    .hero { 
-      background: linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)), url('https://source.unsplash.com/random/1600x900/?modern-home') center/cover no-repeat; 
-      height: 80vh; 
-      display: flex; 
-      align-items: center; 
-      justify-content: center; 
-      text-align: center; 
-      color: white; 
-    }
-    h1 { font-size: 3.8rem; margin: 0; }
-    .subtitle { font-size: 1.6rem; margin: 15px 0 40px; }
-    nav { background: white; padding: 20px 0; box-shadow: 0 4px 15px rgba(0,0,0,0.1); position: sticky; top: 0; z-index: 100; }
-    .menu { display: flex; justify-content: center; gap: 40px; flex-wrap: wrap; }
-    .menu-item { text-decoration: none; color: var(--dark); font-weight: 500; transition: color 0.3s; }
-    .menu-item:hover { color: var(--primary); }
-    .section { padding: 80px 20px; max-width: 1300px; margin: 0 auto; }
-    .category-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 30px; }
-    .cat-card { background: white; border-radius: 20px; padding: 30px; box-shadow: 0 10px 30px rgba(0,0,0,0.08); transition: all 0.4s; }
-    .cat-card:hover { transform: translateY(-10px); box-shadow: 0 20px 40px rgba(51,167,181,0.15); }
-    .cat-icon { font-size: 3.5rem; margin-bottom: 20px; color: var(--primary); }
-    .products { list-style: none; padding: 0; }
-    .products li { padding: 8px 0; border-bottom: 1px dashed #eee; }
-    footer { background: var(--dark); color: white; padding: 60px 20px 30px; text-align: center; }
-    .logo { max-height: 70px; margin-bottom: 20px; }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Tendy | Showcase</title>
+<link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;600;800&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box}body{margin:0;font-family:Vazirmatn,sans-serif;background:#f5f7fa;color:#1f2937}
+header{height:100vh;background:linear-gradient(rgba(0,0,0,.45),rgba(0,0,0,.5)),url('https://images.unsplash.com/photo-1484154218962-a197022b5858?auto=format&fit=crop&w=1600&q=80') center/cover;display:flex;align-items:center;justify-content:center;text-align:center;color:#fff}
+.hero{max-width:850px;padding:20px}
+h1{font-size:64px;margin:0}p{line-height:1.8}
+.btn{display:inline-block;margin-top:20px;background:#11b6c9;color:#fff;padding:16px 30px;border-radius:999px;text-decoration:none}
+nav{position:sticky;top:0;background:#ffffffdd;backdrop-filter:blur(12px);padding:18px;display:flex;justify-content:center;gap:40px}
+nav a{text-decoration:none;color:#111;font-weight:600}
+section{max-width:1200px;margin:auto;padding:80px 20px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:30px}
+.card{background:#fff;border-radius:22px;overflow:hidden;box-shadow:0 15px 35px rgba(0,0,0,.08);transition:.3s}
+.card:hover{transform:translateY(-8px)}
+.card img{width:100%;height:220px;object-fit:cover}
+.card div{padding:22px}
+.badge{display:inline-block;background:#e8fbfd;color:#0f8fa6;padding:6px 12px;border-radius:999px;font-size:12px}
+footer{background:#101828;color:#fff;text-align:center;padding:40px}
+</style>
 </head>
 <body>
-  <div class="hero">
-    <div>
-      <h1>Tendy</h1>
-      <p class="subtitle">شبکه فروش هوشمند خانه • خدمات جامع انتخاب</p>
-    </div>
-  </div>
+<header>
+<div class="hero">
+<h1>Tendy</h1>
+<h2>شبکه هوشمند فروش و تجربه محصولات خانه</h2>
+<p>پلتفرم معرفی محصولات، دمو در منزل و تجربه‌ای مدرن برای نمایش سبد کالایی خدمات جامع انتخاب.</p>
+<a class="btn" href="#cats">مشاهده محصولات</a>
+</div>
+</header>
+<nav><a href="#">خانه</a><a href="#cats">محصولات</a><a href="#demo">دمو در منزل</a><a href="#about">درباره</a></nav>
 
-  <nav>
-    <div class="menu">
-      <a href="#home" class="menu-item">خانه</a>
-      <a href="#categories" class="menu-item">دسته‌بندی محصولات</a>
-      <a href="#demo" class="menu-item">دمو در منزل</a>
-    </div>
-  </nav>
+<section id="about">
+<h2>چرا Tendy؟</h2>
+<p>به جای یک پاورپوینت ایستا، این میکروسایت برای ارائه سبد محصولات، دسته‌بندی‌ها و خدمات طراحی شده و به راحتی روی GitHub Pages قابل انتشار است.</p>
+</section>
 
-  <div id="categories" class="section">
-    <h2 style="text-align:center; color:var(--primary); margin-bottom:50px;">دسته‌بندی محصولات Tendy</h2>
-    <div class="category-grid">
-      <!-- Home & Kitchen -->
-      <div class="cat-card">
-        <div class="cat-icon">🏠</div>
-        <h3>Home & Kitchen</h3>
-        <p>لوازم خانه و آشپزخانه</p>
-        <ul class="products">
-          <li>سرخ‌کن بدون روغن</li>
-          <li>مخلوط‌کن و غذاساز</li>
-          <li>ساندویچ‌ساز</li>
-          <li>جاروبرقی و بخارشوی</li>
-          <li>اتو بخار</li>
-        </ul>
-      </div>
+<section id="cats">
+<h2>دسته‌بندی محصولات</h2>
+<div class="grid">
+<div class="card">
+<img src="https://images.unsplash.com/photo-1556911220-bff31c812dba?auto=format&fit=crop&w=900&q=80">
+<div><span class="badge">Home & Kitchen</span><h3>خانه و آشپزخانه</h3><p>سرخ‌کن، جاروبرقی، قهوه‌ساز، بخارشوی، اتو و لوازم آشپزی.</p></div>
+</div>
+<div class="card">
+<img src="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?auto=format&fit=crop&w=900&q=80">
+<div><span class="badge">Beauty</span><h3>زیبایی و مراقبت شخصی</h3><p>سشوار، دستگاه‌های مراقبت پوست، بخور صورت و مسواک برقی.</p></div>
+</div>
+<div class="card">
+<img src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438?auto=format&fit=crop&w=900&q=80">
+<div><span class="badge">Health</span><h3>سلامت و تندرستی</h3><p>تصفیه هوا، ماساژور، تجهیزات سبک سلامت و رفاه.</p></div>
+</div>
+</div>
+</section>
 
-      <!-- Beauty & Personal Care -->
-      <div class="cat-card">
-        <div class="cat-icon">💄</div>
-        <h3>Beauty & Personal Care</h3>
-        <p>آرایشی و بهداشتی</p>
-        <ul class="products">
-          <li>دستگاه مراقبت پوست</li>
-          <li>بخور صورت</li>
-          <li>سشوار و حالت‌دهنده مو</li>
-          <li>مسواک برقی</li>
-        </ul>
-      </div>
+<section id="demo">
+<h2>Demo at Home</h2>
+<p>کارشناس Tendy محصول را در منزل یا محل کار معرفی کرده، قابلیت‌ها را نمایش می‌دهد و تجربه خرید را شخصی‌سازی می‌کند.</p>
+</section>
 
-      <!-- Health & Wellness -->
-      <div class="cat-card">
-        <div class="cat-icon">🧘</div>
-        <h3>Health & Wellness</h3>
-        <p>سلامت و تندرستی</p>
-        <ul class="products">
-          <li>تصفیه‌کننده هوا</li>
-          <li>کتری برقی هوشمند</li>
-          <li>دستگاه ماساژ</li>
-        </ul>
-      </div>
-    </div>
-  </div>
-
-  <footer>
-    <img src="https://www.entekhabservice.com/wp-content/uploads/2025/08/%D9%84%D9%88%DA%AF%D9%88-%D9%84%D8%A7%D8%AA%DB%8C%D9%86-300x169.png" alt="هلدینگ خدمات جامع انتخاب" class="logo">
-  </footer>
-</body>
-</html>
+<footer>
+<h3>Tendy</h3>
+<p>Prepared for Tendy Team • GitHub Pages Ready</p>
+</footer>
+</body></html>
